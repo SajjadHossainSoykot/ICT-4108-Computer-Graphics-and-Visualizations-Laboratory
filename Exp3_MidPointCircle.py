@@ -39,6 +39,8 @@ def midpoint_circle(xc, yc, r):
     y_coordinates = [point[1] for point in points]
 
     plt.plot(x_coordinates, y_coordinates, marker='o', linestyle='None')
+    plt.scatter(xc, yc, color="black", marker="x", s=100, label="Center")
+    plt.text(xc + 0.5, yc + 0.5, f"Center ({xc}, {yc})")
     plt.title("Midpoint Circle Drawing Algorithm")
     plt.xlabel("X-axis")
     plt.ylabel("Y-axis")
